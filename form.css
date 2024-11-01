@@ -1,0 +1,92 @@
+div.sfc_form table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+div.sfc_form table tr.sfc_highlight td {
+    font-weight: bold;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+div.sfc_form table tr th,
+div.sfc_form table tr td {
+    text-align: left;
+    padding: 2px 5px;
+}
+
+div.sfc_form table tr th.sfc_numeric,
+div.sfc_form table tr td.sfc_numeric {
+    text-align: right;
+}
+
+div.sfc_form table tr th.sfc_team {
+    width: 100%;
+}
+
+div.sfc_form table tr td.sfc_team {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 20px 20px;
+    line-height: 25px;
+    padding-left: 25px !important;
+}
+
+div.sfc_form table tr th.sfc_form,
+div.sfc_form table tr td.sfc_form {
+    white-space: nowrap;
+}
+
+div.sfc_form table tr th abbr,
+div.sfc_form table tr td abbr {
+    border-bottom: none;
+    cursor: help;
+}
+
+div.sfc_form table tr th span,
+div.sfc_form table tr td span {
+    display: inline-block;
+    width: 1.5em;
+    margin-right: 5px;
+    text-align: center;
+    border-radius: 5px;
+    color: #F8F8F8;
+}
+
+div.sfc_form table tr th span.sfc_W,
+div.sfc_form table tr td span.sfc_W {
+    background: #22AA22;
+}
+
+div.sfc_form table tr th span.sfc_D,
+div.sfc_form table tr td span.sfc_D {
+    background: orange;
+}
+
+div.sfc_form table tr th span.sfc_L,
+div.sfc_form table tr td span.sfc_L {
+    background: #FF3333;
+}
+
+div.sfc_form table thead th {
+    text-transform: uppercase;
+    font-size: small;
+    background-color: silver;
+}
+
+div.sfc_form div.sfc_footer {
+    display: block !important;
+    opacity: 1 !important;
+    text-align: right;
+    visibility: visible !important;
+}
+
+@media screen and (max-width: 767px) {
+    div.sfc_form {
+        width: 100%;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+}
